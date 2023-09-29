@@ -6,7 +6,7 @@ distance = int(input("Qu'elle est la distance que vous allez parcourir ?"))
 print("Qu'elle est votre moyen de transport ? ")
 print("1. Voiture thermique") == 1
 print("2. Voiture électrique") == 2
-print("3. pied,vélo,skateboard") == 3
+print("3. Marche,vélo,skateboard") == 3
 print("4. Vélo électrique ou trottinette électrique") == 4
 print("5. Transport en commun (autocar)") == 5
 transport = int(input("Moyen choissi (chiffre): "))
