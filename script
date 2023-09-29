@@ -1,0 +1,25 @@
+### Ce script permet à l'aide de vos données fourni, de calculer l'émission de Co2 de vous émettez durant votre trajet.
+## Ceci est mon premier script issu d'un exercice où la consigne était : "Écrire un programme qui calcule l'empreinte carbone de votre déplacement.".
+# Merci de votre lecture.
+
+distance = int(input("Qu'elle est la distance que vous allez parcourir ?"))
+print("Qu'elle est votre moyen de transport ? ")
+print("1. Voiture thermique") == 1
+print("2. Voiture électrique") == 2
+print("3. pied,vélo,skateboard") == 3
+print("4. Vélo électrique ou trottinette électrique") == 4
+print("5. Transport en commun (autocar)") == 5
+transport = int(input("Moyen choissi (chiffre): "))
+
+if transport == 1:
+    print("Tu est à", round(distance * 0.2176, 2), "kgCO2.") # Voiture thermique
+if transport == 2:
+    print("Tu est à", round(distance * 0.1034, 2), "kgCO2.") # Voiture électrique
+if transport == 3:
+    print("Tu est à", round(distance * 0, 2), "kgCO2.") # Pied, vélo, skateboard
+if transport == 4:
+    print("Tu est à", round(distance * 0.0107, 2), "kgCO2.") # Vélo/Trotinette électrique
+if transport == 5:
+    print("Tu est à", round(distance * 0.02942, 2), "kgCO2.") # Trnasport en commun
+if transport >= 6:
+    print("Erreur. Veuillez choisir un chiffre compris entre 1 et 5.")
